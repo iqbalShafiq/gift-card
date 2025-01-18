@@ -8,7 +8,11 @@ import type React from "react";
 import { useRef, useState } from "react";
 
 interface FileUploaderProps {
-	onFileSelectAction: (file: File) => void;
+	onFileSelectAction: (
+		file: File,
+		preview: string,
+		size: { width: number; height: number },
+	) => void;
 	label: string;
 }
 
@@ -53,14 +57,15 @@ export function FileUploader({ onFileSelectAction, label }: FileUploaderProps) {
 		const url = URL.createObjectURL(file);
 		const img = new window.Image();
 		img.onload = () => {
-			setImageSize({
+			const size = {
 				width: img.width,
 				height: img.height,
-			});
+			};
+			setImageSize(size);
+			setPreview(url);
+			onFileSelectAction(file, url, size);
 		};
 		img.src = url;
-		setPreview(url);
-		onFileSelectAction(file);
 	};
 
 	const handleButtonClick = () => {
@@ -70,7 +75,7 @@ export function FileUploader({ onFileSelectAction, label }: FileUploaderProps) {
 	return (
 		<div className="w-full">
 			{preview && (
-				<div className="relative my-8 w-full">
+				<div className="relative mb-6 w-full">
 					{preview && imageSize && (
 						<div className="flex w-full justify-center">
 							<Image
@@ -114,8 +119,8 @@ export function FileUploader({ onFileSelectAction, label }: FileUploaderProps) {
 					<div className="flex flex-col items-center justify-center">
 						<UploadCloud size={32} />
 						<div className="mt-3 flex flex-col text-gray-600 text-sm">
-							<p className="font-semibold text-lg">Browse File</p>
-							<p className="text-sm">Drag and drop file here</p>
+							<p className="font-semibold text-sm md:text-lg">Browse File</p>
+							<p className="text-xs md:text-sm">Drag and drop file here</p>
 						</div>
 					</div>
 				</div>

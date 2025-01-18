@@ -1,8 +1,24 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import {
+	Geist,
+	Geist_Mono,
+	Great_Vibes,
+	Playfair_Display,
+} from "next/font/google";
 import "./globals.css";
 import { Card } from "@/components/ui/card";
 import type React from "react";
+
+const playfair = Playfair_Display({
+	subsets: ["latin"],
+	display: "swap",
+});
+
+const greatVibes = Great_Vibes({
+	weight: "400",
+	subsets: ["latin"],
+	display: "swap",
+});
 
 const geistSans = Geist({
 	variable: "--font-geist-sans",
@@ -29,7 +45,13 @@ export default function RootLayout({
 			<body
 				className={`${geistSans.variable} ${geistMono.variable} antialiasing flex w-full flex-col items-center justify-center bg-gray-200`}
 			>
-				<Card className={"my-4 w-1/2 px-8 py-4"}>{children}</Card>
+				<Card
+					className={
+						"my-0 w-full rounded-none px-8 py-4 md:my-4 md:w-1/2 md:rounded-md"
+					}
+				>
+					{children}
+				</Card>
 			</body>
 		</html>
 	);
