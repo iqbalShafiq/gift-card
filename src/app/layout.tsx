@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Great_Vibes } from "next/font/google";
 import "./globals.css";
 import { Card } from "@/components/ui/card";
+import { Toaster } from "@/components/ui/toaster";
 import type React from "react";
 
 const greatVibes = Great_Vibes({
@@ -43,6 +44,7 @@ export default function RootLayout({
 				>
 					{children}
 				</Card>
+				<Toaster />
 			</body>
 		</html>
 	);

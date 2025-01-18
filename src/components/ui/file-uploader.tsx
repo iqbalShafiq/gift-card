@@ -117,7 +117,7 @@ export function FileUploader({ onFileSelectAction, label }: FileUploaderProps) {
 				/>
 				<div className="text-center">
 					<div className="flex flex-col items-center justify-center">
-						<UploadCloud size={32} />
+						<UploadCloud className={"text-gray-600"} size={32} />
 						<div className="mt-3 flex flex-col text-gray-600 text-sm">
 							<p className="font-semibold text-sm md:text-lg">Browse File</p>
 							<p className="text-xs md:text-sm">Drag and drop file here</p>
