@@ -1,6 +1,6 @@
 "use client";
 
-import { GiftCardCanvas } from "@/app/utils/canvas/text-utils";
+import { GiftCardCanvas } from "@/app/utils/canvas/GiftCardCanvas";
 import { Button } from "@/components/ui/button";
 import { FileUploader } from "@/components/ui/file-uploader";
 import { Input } from "@/components/ui/input";
@@ -128,6 +128,11 @@ export default function Home() {
 			document.body.removeChild(a);
 			URL.revokeObjectURL(url);
 		} catch (error) {
+			toast({
+				variant: "destructive",
+				title: "Failed to generate gift card",
+				description: "Please try again",
+			});
 			console.log("Failed to generate gift card:", error);
 		}
 	};

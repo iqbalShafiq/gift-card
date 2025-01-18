@@ -1,7 +1,7 @@
 import type { CanvasConfig, GiftCardData, TextInCanvas } from "./types";
 
 export class GiftCardCanvas {
-	private ctx: CanvasRenderingContext2D;
+	ctx: CanvasRenderingContext2D;
 	private canvas: HTMLCanvasElement;
 	private readonly texts: TextInCanvas[];
 
