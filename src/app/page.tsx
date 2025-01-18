@@ -17,16 +17,11 @@ export default function Home() {
 
 				<main className={"flex flex-col space-y-4"}>
 					<div className={"flex flex-col space-y-2"}>
-						<Label
-							htmlFor={"recipient"}
-							className={"font-semibold text-slate-900"}
-						>
-							File Upload
-						</Label>
 						<FileUploader
 							onFileSelectAction={(file) => {
 								console.log(file);
 							}}
+							label={"File Upload"}
 						/>
 					</div>
 

@@ -27,7 +27,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body
-				className={`${geistSans.variable} ${geistMono.variable} flex w-full justify-center bg-gray-200 antialiased`}
+				className={`${geistSans.variable} ${geistMono.variable} antialiasing flex w-full flex-col items-center justify-center bg-gray-200`}
 			>
 				<Card className={"my-4 w-1/2 px-8 py-4"}>{children}</Card>
 			</body>
