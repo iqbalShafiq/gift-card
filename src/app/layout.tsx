@@ -47,7 +47,7 @@ export default function RootLayout({
 			>
 				<Card
 					className={
-						"my-0 w-full rounded-none px-8 py-4 md:my-4 md:w-1/2 md:rounded-md"
+						"my-0 w-full rounded-none px-8 py-4 md:my-4 md:w-5/6 md:rounded-md xl:w-1/2"
 					}
 				>
 					{children}

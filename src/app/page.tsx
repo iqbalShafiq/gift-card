@@ -139,6 +139,7 @@ export default function Home() {
 					text: string,
 					maxWidth: number,
 					fontSize: number,
+					maxLines: number,
 				): string[] => {
 					const words = text.split(" ");
 					const lines: string[] = [];
@@ -183,8 +184,14 @@ export default function Home() {
 				};
 
 				// Draw Dear
-				drawText(
+				const maxAsideWidth = imageSize.width * 0.3;
+				const headerLines = truncateWithEllipsis(
 					recipient,
+					maxAsideWidth,
+					baseFontSize,
+				);
+				drawText(
+					headerLines,
 					imageSize.width * horizontalPositions.dear,
 					verticalSpacing.firstLine,
 					baseFontSize * 1.2,
@@ -197,6 +204,7 @@ export default function Home() {
 					message,
 					maxMessageWidth,
 					baseFontSize,
+					maxLines,
 				);
 
 				const messageX = imageSize.width * horizontalPositions.message;
@@ -206,8 +214,13 @@ export default function Home() {
 				});
 
 				// Draw From
-				drawText(
+				const footerLines = truncateWithEllipsis(
 					sender,
+					maxAsideWidth,
+					baseFontSize,
+				);
+				drawText(
+					footerLines,
 					imageSize.width * horizontalPositions.from,
 					verticalSpacing.fourthLine,
 				);
