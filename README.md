@@ -1,8 +1,8 @@
 
 <div align="center">  
   <h1>🧧 Gift Card</h1>  
-  <img src="https://github.com/iqbalShafiq/gift-card/actions/workflows/test.yml/badge.svg" alt="GitHub Actions Workflows" />
   <p><i>A modern web application for creating personalized digital gift cards with custom messages, backgrounds, and elegant typography.</i></p>  
+  <img src="https://github.com/iqbalShafiq/gift-card/actions/workflows/test.yml/badge.svg" alt="GitHub Actions Workflows" />
 
   <p>  
     <a href="#tech-stack">Tech Stack</a> •  
