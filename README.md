@@ -1,36 +1,99 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+<div align="center">  
+  <h1>🧧 Gift Card</h1>  
+  <p><i>A modern web application for creating personalized digital gift cards with custom messages, backgrounds, and elegant typography.</i></p>  
 
-First, run the development server:
+  <p>  
+    <a href="#tech-stack">Tech Stack</a> •  
+    <a href="#features">Features</a> •  
+    <a href="#prerequisites">Prerequisites</a> •  
+    <a href="#getting-started">Getting Started</a> •
+    <a href="#running-test">Running Test</a>
+  </p>  
+</div>  
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<div id="tech-stack">
+  <h2>🛠️ Tech Stack</h2>
+  <p align="center">
+    <img src="https://img.shields.io/badge/React-19.0.0-61DAFB?style=for-the-badge&logo=react&logoColor=white" alt="React 19" />
+    <img src="https://img.shields.io/badge/Next.js%2015-black?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js"/>
+    <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/>
+    <img src="https://img.shields.io/badge/Tailwind%20CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind"/>
+    <img src="https://img.shields.io/badge/shadcn%2Fui-000000?style=for-the-badge&logo=shadcnui&logoColor=white" alt="shadcn/ui"/>
+    <img src="https://img.shields.io/badge/Bun-000000?style=for-the-badge&logo=bun&logoColor=white" alt="Bun"/>
+  </p>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+  <ul>
+    <li>🔥 <strong>React 19</strong> - The latest version of React library with enhanced features</li>
+    <li>⚡ <strong>Next.js 15</strong> - Production-ready React framework with server-side capabilities</li>
+    <li>🎨 <strong>Tailwind CSS</strong> - Utility-first CSS framework</li>
+    <li>🎯 <strong>Shadcn/UI</strong> - Re-usable components built with Radix UI and Tailwind</li>
+    <li>🚀 <strong>Bun</strong> - All-in-one JavaScript runtime & toolkit</li>
+    <li>📘 <strong>TypeScript</strong> - For type safety and better developer experience</li>
+    <li>📝 <strong>React Quill</strong> - Rich text editor</li>
+    <li>✨ <strong>Lucide React</strong> - Beautiful icons</li>
+    <li>🎭 <strong>Biome</strong> - Fast formatter and linter</li>
+  </ul>
+</div>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<div id="features">  
+  <h2>✨ Features</h2>  
+  <ul>  
+    <li>Photo Uploader</li>  
+    <li>Filling text into the photo</li>  
+    <li>Download filled photo</li>  
+  </ul>  
+</div>  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+<div id="prerequisites">  
+  <h2>📋 Prerequisites</h2>  
+  <ul>  
+    <li>  
+        <a href="https://nodejs.org/" target="_blank" rel="noopener noreferrer">Node.js</a>  
+        <span class="version">(v18 or higher)</span>  
+    </li>  
+    <li>  
+        <a href="https://bun.sh/" target="_blank" rel="noopener noreferrer">Bun</a>  
+        <span class="version">(Latest)</span>  
+    </li>
+  </ul>  
+</div>  
 
-## Learn More
+<div id="getting-started">  
+  <h2>🚀 Getting Started</h2>  
 
-To learn more about Next.js, take a look at the following resources:
+ ```bash  
+ # Clone the repository 
+ git clone https://github.com/iqbalShafiq/gift-card.git
+ 
+ # Navigate to the project directory 
+ cd gift-card  
+ 
+ # Install dependencies 
+ bun install  
+ 
+ # Start the development server 
+ bun dev  
+ 
+ # Visit http://localhost:3000 in your browser
+ ```  
+</div> 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+<div id="running-test">  
+  <h2>🧪 Running Test</h2>
 
-## Deploy on Vercel
+  ```bash
+    # Run test
+    bun test
+  ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+</div>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<div id="footer">  
+  <hr>  
+
+  <p align="left">  
+    Built by <a href="https://github.com/iqbalShafiq">Iqbal Shafiq</a>  
+  </p>  
+</div>
